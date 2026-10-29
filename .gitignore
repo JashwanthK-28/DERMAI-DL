@@ -1,0 +1,39 @@
+# Python / Virtual Environment
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+.npm
+frontend/.env.local
+frontend/.env.*.local
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+.kilo/
+
+# Application / Database & Local Storage
+*.db
+*.sqlite3
+uploads/
+outputs/
+saved_models/*.pth
+saved_models/*.pt
+
+# Large dataset files & images
+data/
+*.csv
+!metadata_template.csv

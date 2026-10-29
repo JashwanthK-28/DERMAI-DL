@@ -1,0 +1,53 @@
+{
+  "model_name": "resnet50_baseline",
+  "architecture": "ResNet50",
+  "hyperparameters": {
+    "epochs": 2,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "loss_function": "weighted_ce",
+    "dropout_rate": 0.4,
+    "image_size": [
+      224,
+      224,
+      3
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 0.4837,
+    "macro_precision": 0.2731,
+    "macro_recall": 0.2786,
+    "macro_f1": 0.2601,
+    "weighted_f1": 0.4239,
+    "best_val_loss": 1.7205
+  },
+  "classes": [
+    "ACK",
+    "BCC",
+    "MEL",
+    "NEV",
+    "SCC",
+    "SEK"
+  ],
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.7973,
+      "train_acc": 0.28,
+      "val_loss": 1.7634,
+      "val_acc": 0.4054,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.72,
+      "train_acc": 0.445,
+      "val_loss": 1.7205,
+      "val_acc": 0.464,
+      "lr": 0.0001
+    }
+  ]
+}
